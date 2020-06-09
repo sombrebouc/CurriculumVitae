@@ -137,11 +137,65 @@ footer{
     color: rgb(175,175,175);
 }
 
+#scroll_to_top { 
+  position: fixed; 
+  width: 25px; 
+  height: 25px; 
+  bottom: 3.5%; 
+  right: 7.5%;
+} 
+#scroll_to_top img { 
+  width: 30px;
+}
 
 /* === Responsive === */
+@media screen and (max-width: 1280px) {
 
-@media screen and (max-width: 600px) {
+  .logo{
+      margin: auto;
+  }
+  .bodySite{
+    margin: 4vw;
+    background: rgba(40,40,40,1);
+    background-image: linear-gradient(180deg, rgba(41, 41, 41, 0.5),rgba(41, 41, 41, 0.3)), url(../img/cervideBack.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position: center;
+  }
+  .divCorpus{
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  #scroll_to_top { 
+    position: fixed; 
+    width: 25px; 
+    height: 25px; 
+    bottom: 3.5%; 
+    right: 3.5%;
+  } 
+  }
+@media screen and (max-width: 769px) {
 
 .logo{
     margin: auto;
+}
+.bodySite{
+  margin: 2vw;
+  background: rgba(40,40,40,1);
+  background-image: linear-gradient(180deg, rgba(41, 41, 41, 0.5),rgba(41, 41, 41, 0.3)), url(../img/cervideBack.jpg);
+  background-size: contain;
+  background-repeat: repeat-y;
+  background-position: center;
+}
+.divCorpus{
+  padding-right: 1em;
+  padding-left: 1em;
+}
+#scroll_to_top { 
+  position: fixed; 
+  width: 25px; 
+  height: 25px; 
+  bottom: 3.5%; 
+  right: 1.35%;
+} 
 }
