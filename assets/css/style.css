@@ -2,6 +2,9 @@ html{
     font-family: 'arial';
     color: rgb(175,175,175);
 }
+body{
+  background-color: rgb(40,40,40);
+}
 header{
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +15,6 @@ header{
 h1{
    flex-grow: 1;
 }
-
 .logo{
     margin-left: auto;
     flex-basis: 20%;
@@ -55,15 +57,21 @@ ul {
     background-color: rgb(245, 183, 90);
   }
 
-/* === Fond Ecran Bandes Degradees === */
+/* === Fond Ecran === */
 
 .bodySite{
     margin: 10vw;
     background: rgba(40,40,40,1);
     background-image: linear-gradient(180deg, rgba(41, 41, 41, 0.5),rgba(41, 41, 41, 0.3)), url(../img/cervideBack.jpg);
+    background-size: contain;
     background-repeat: repeat-y;
     background-position: center;
 }
+.divCorpus{
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
 
 /* === WIP Bars === */
 
@@ -128,6 +136,8 @@ footer{
     text-decoration: none;
     color: rgb(175,175,175);
 }
+
+
 /* === Responsive === */
 
 @media screen and (max-width: 600px) {
